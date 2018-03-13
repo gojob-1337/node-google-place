@@ -1,5 +1,8 @@
 # @gojob/google-place
 
+[![travis build](https://img.shields.io/travis/gojob-1337/node-google-place.svg)](https://travis-ci.org/gojob-1337/node-google-place)
+[![Coverage Status](https://coveralls.io/repos/github/gojob-1337/node-google-place/badge.svg?branch=master)](https://coveralls.io/github/gojob-1337/node-google-place?branch=master)
+
 ## Description
 
 This package is a library for Node.js to consume the Google Place autocomplete & details API.
