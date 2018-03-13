@@ -1,0 +1,22 @@
+{
+  "transform": {
+    "^.+\\.tsx?$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+  },
+  "testRegex": ".*\\.test\\.ts$",
+  "modulePaths": [
+    "<rootDir>/"
+  ],
+  "moduleFileExtensions": [
+    "ts",
+    "js",
+    "json"
+  ],
+  "collectCoverageFrom" : [
+    "lib/**/*.ts",
+    "!**/node_modules/**",
+    "!tests"
+  ],
+  "coverageReporters": ["json", "lcov"],
+  "coverageDirectory": "coverage",
+  "verbose": true
+}

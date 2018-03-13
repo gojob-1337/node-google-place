@@ -1,0 +1,138 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "Port-de-Bouc",
+            "short_name" : "Port-de-Bouc",
+            "types" : [ "locality", "political" ]
+         },
+         {
+            "long_name" : "Bouches-du-Rhône",
+            "short_name" : "Bouches-du-Rhône",
+            "types" : [ "administrative_area_level_2", "political" ]
+         },
+         {
+            "long_name" : "Provence-Alpes-Côte d'Azur",
+            "short_name" : "Provence-Alpes-Côte d'Azur",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "France",
+            "short_name" : "FR",
+            "types" : [ "country", "political" ]
+         }
+      ],
+      "adr_address" : "\u003cspan class=\"locality\"\u003ePort-de-Bouc\u003c/span\u003e, \u003cspan class=\"country-name\"\u003eFrance\u003c/span\u003e",
+      "formatted_address" : "Port-de-Bouc, France",
+      "geometry" : {
+         "location" : {
+            "lat" : 43.405449,
+            "lng" : 4.985931
+         },
+         "viewport" : {
+            "northeast" : {
+               "lat" : 43.445346,
+               "lng" : 5.02729
+            },
+            "southwest" : {
+               "lat" : 43.395991,
+               "lng" : 4.971286
+            }
+         }
+      },
+      "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/geocode-71.png",
+      "id" : "52d91c2246245d88fec584878b1dbbfb0a29a494",
+      "name" : "Port-de-Bouc",
+      "photos" : [
+         {
+            "height" : 480,
+            "html_attributions" : [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/114673648563180954350/photos\"\u003etrinkillou de-Bouc\u003c/a\u003e"
+            ],
+            "photo_reference" : "CmRaAAAAT6oQqTE-BJL6r4Vn4KfIJEqtLvSqJsNzd-LRcFjs7dVMNzhfRB4blDsMU5JSc3mZBcE52do9zo3Gke9wH4x-TZL_f8p3mXsXQzuKR1s6Z7butdsVhEk4Qgj92gaN7hTjEhBQvqOjj5H6-Cc3SwP5uIICGhQl4FA5aL1fj6GaeniNmDdVjzLPsA",
+            "width" : 640
+         },
+         {
+            "height" : 2560,
+            "html_attributions" : [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/101571176170542782535/photos\"\u003eZo Ber\u003c/a\u003e"
+            ],
+            "photo_reference" : "CmRaAAAAFQEgyA9w3bDlSedalXGpDcYHANuIJT7X2PypLvLE9A9Jc8H8sNkdqGJ5c_fFHoURLRss_MPn-Obyb7e7nDCyL8MElSrc-SWZ5jjWem_Vb0YNZkeSQgqHmGwneNXRFq7aEhA0STUPjZRWVyl28yVoutZ-GhTD8edo74-qSUYTdgOINE_Z0epZfA",
+            "width" : 1536
+         },
+         {
+            "height" : 1936,
+            "html_attributions" : [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/115999057989914448867/photos\"\u003eОльга Колокнёва\u003c/a\u003e"
+            ],
+            "photo_reference" : "CmRZAAAAwqcYdIQIW7Burxc3HEySqZwThQfTLouoHbEzdNkJwChevruBmQEIaJWQS51Tut-o30Sj97-w-RXkm0Td55qT7Hqr-VZwOoMYsdiSCPIpDbBMF9--QotvxuweuJ1nszdVEhDhR0Q4jashC5ALePIH1QFhGhQPojsHfPtHtOC9ou7dbIW6cL28YA",
+            "width" : 2592
+         },
+         {
+            "height" : 5312,
+            "html_attributions" : [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/114464419390512051200/photos\"\u003eMaarouf Soufyane\u003c/a\u003e"
+            ],
+            "photo_reference" : "CmRaAAAASlt-ef4LncqmOBYNyTjHfck5sgWhY8ED5Jt6ratXIZuhvwuzqF0kOYVwCH5png3Zhy1iafC5qzLPgh6La5Ov2JVt_oOfURpY9BbH7DxPwYQzZ_OhzaFrXeZj9dXRyKEaEhCdQR3K5yME9NkMjuQINYWeGhS5QDnbKk5N2kuqDOyvOTrh3CHrBw",
+            "width" : 2988
+         },
+         {
+            "height" : 2592,
+            "html_attributions" : [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/115999057989914448867/photos\"\u003eОльга Колокнёва\u003c/a\u003e"
+            ],
+            "photo_reference" : "CmRZAAAAOsDVqVRjp9uaOdTozBRbwIJ2mHRml466nePMR0iMe3Mpte45E5wqPzM14Doa_SOXBFX27O2Le4_xnCXmZg1s2Y-AHCSv4nL9bAESl1COHRYbM6t4GqCyxF0MoSRg4BuqEhCQM4jVkLsiBFJN7eDL6t1_GhT-vnMCfSVcR-fzuyY3rTBT0lSPmQ",
+            "width" : 1936
+         },
+         {
+            "height" : 1936,
+            "html_attributions" : [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/111475530404954771890/photos\"\u003echapouton christine\u003c/a\u003e"
+            ],
+            "photo_reference" : "CmRZAAAAAy8jVh1Ema_Gj67evddrQxyeLCKFsBucYsiZUYpMn0mb_Li7wObpnwGF7GZ6BgmoishL4R4wemwGaTM6yzpnG56phnGubRvtmO1te3b35jT1ScGAq-2wTeZIipvvddbdEhD3JwYb-eqD88eG_1iUr7ZmGhQSc23JNr92zwWcqeaIl202LHgtmQ",
+            "width" : 1936
+         },
+         {
+            "height" : 2592,
+            "html_attributions" : [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/115999057989914448867/photos\"\u003eОльга Колокнёва\u003c/a\u003e"
+            ],
+            "photo_reference" : "CmRZAAAANxWld38uVkzG0nz7ccOaAGClZxbyNBxC9_i1JDDKomUR0dpknV3LFnyiy1uvI-CycJDiRrvzA13zkzcEYrHZZsc5IkAmdyQdc-DdaFJmHFuSjeNumejeL3Fl8cqF3JiCEhBRy4V-Kq6JU_XzVZBITplgGhSkUMuE-QAqIL0Kn2HUyB4B1XUrxg",
+            "width" : 1936
+         },
+         {
+            "height" : 4096,
+            "html_attributions" : [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/115044353896321317342/photos\"\u003eThomas Dalibey\u003c/a\u003e"
+            ],
+            "photo_reference" : "CmRaAAAAe0Elc5bfmH2Ub7Yb8ePIK041_L3-73893y4293Cp3g52GTvEn9pu_Z1RuZ0VHEmAxTbOy7XToBrQZ3I_c9FM7tp6-f9RKOZzTCkMLhhO84AH8erfTHdbluc8m6G-oSVREhCyYU5c4j9rhY9OlcdcAqUkGhTXOuDCHJccAuDgv5t9PcDgKvYuHw",
+            "width" : 2304
+         },
+         {
+            "height" : 1936,
+            "html_attributions" : [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/115999057989914448867/photos\"\u003eОльга Колокнёва\u003c/a\u003e"
+            ],
+            "photo_reference" : "CmRZAAAAdXPihvGbaZL-QtSGp5hxZKh0ngp7J3yGXj7lGIV02bP8H-OLVREl69_zLP6Pak-exW8XeuMqIcc0PwXjK-yOfBg_2ZhrX3hQvBLbHtGp74yPYSWKjYJ6LZea5WVpy2D9EhAyJ6hMaryZjU3wERzgm2WNGhQiPXZOr9ouOMGHCwGHXTi6MkvDCg",
+            "width" : 2592
+         },
+         {
+            "height" : 2592,
+            "html_attributions" : [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/115999057989914448867/photos\"\u003eОльга Колокнёва\u003c/a\u003e"
+            ],
+            "photo_reference" : "CmRZAAAAqFHfXtVh0mFcJM5z_k39e9AJs63HwGZXVwj_8qQajDKV2bP2QP03raJMtIk1CUxI0ollCmmFTju3aiBHXTuJycDem-W_i_ts3mLqxUmEQ8D3G6ohJ01OqNdP0s0E9vqnEhBA_rGNLIo0SwpsVUTNRsCbGhR7fgriumHdKT3VPZx1_wYLOz9MlQ",
+            "width" : 1936
+         }
+      ],
+      "place_id" : "ChIJ-RzUxt8ethIRksIaOl-0tJY",
+      "reference" : "CmRbAAAA5ia9m9nmhWy31jUY4Or8eYmZn1Y6lX0fWOUEI5PBvaDPmdRFLqdzFKTeYHKmruK9skw_fuCluk7wBYf_J6A-IaC5w-wbC4Q4XEOjUIqWeU6sXKLpM1UsdSNMgTpAm6o5EhBq0j_IGsiAr4N9ypaqDSYnGhRi8oQz95RxXKvPpB82y704unDORQ",
+      "scope" : "GOOGLE",
+      "types" : [ "locality", "political" ],
+      "url" : "https://maps.google.com/?q=Port-de-Bouc,+France&ftid=0x12b61edfc6d41cf9:0x96b4b45f3a1ac292",
+      "utc_offset" : 60,
+      "vicinity" : "Port-de-Bouc"
+   },
+   "status" : "OK"
+}

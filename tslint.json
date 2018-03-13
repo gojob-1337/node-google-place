@@ -1,0 +1,12 @@
+{
+  "extends": [
+    "@gojob/tslint-config/tslint-base",
+    "tslint-config-prettier"
+  ],
+  "env": { "es6": true },
+  "rulesDirectory": ["tslint-plugin-prettier"],
+  "rules": {
+    "no-console": false,
+    "prettier": true
+  }
+}

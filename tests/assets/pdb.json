@@ -1,0 +1,174 @@
+{
+   "predictions" : [
+      {
+         "description" : "Port-de-Bouc, France",
+         "id" : "52d91c2246245d88fec584878b1dbbfb0a29a494",
+         "matched_substrings" : [
+            {
+               "length" : 12,
+               "offset" : 0
+            }
+         ],
+         "place_id" : "ChIJ-RzUxt8ethIRksIaOl-0tJY",
+         "reference" : "CjQsAAAAJSOlHTOsV3vRT84uzc1LPTMym_NrSHtNwjSCSb2b5ipFJJOWUFSaA_2lJH2Sn-VjEhCPNDCUpUKx6aGovRuXvvB1GhRuOhbkrsdcbJvX_d3XKJisZz8JGw",
+         "structured_formatting" : {
+            "main_text" : "Port-de-Bouc",
+            "main_text_matched_substrings" : [
+               {
+                  "length" : 12,
+                  "offset" : 0
+               }
+            ],
+            "secondary_text" : "France"
+         },
+         "terms" : [
+            {
+               "offset" : 0,
+               "value" : "Port-de-Bouc"
+            },
+            {
+               "offset" : 14,
+               "value" : "France"
+            }
+         ],
+         "types" : [ "locality", "political", "geocode" ]
+      },
+      {
+         "description" : "Port de By, Bégadan, France",
+         "id" : "da147d4554aa7950dc58fffbd06192ce2eede87b",
+         "matched_substrings" : [
+            {
+               "length" : 9,
+               "offset" : 0
+            }
+         ],
+         "place_id" : "ChIJ2cfM8AO8AUgRTE4iT2zNHRE",
+         "reference" : "CkQ0AAAA7sOO5zwbxRmCNtDbGH1v-lx_O_g5aEZ4KjZ9otCHeRYNbvO_Y3BVt2_JYrbCkKFJ1Zcsa7EkY4XCGMH0_IxxbxIQ8-jzrEYojCf9QhkM9z-2pxoUT7DVPxdd7REUbp4HUl795awb8sE",
+         "structured_formatting" : {
+            "main_text" : "Port de By",
+            "main_text_matched_substrings" : [
+               {
+                  "length" : 9,
+                  "offset" : 0
+               }
+            ],
+            "secondary_text" : "Bégadan, France"
+         },
+         "terms" : [
+            {
+               "offset" : 0,
+               "value" : "Port de By"
+            },
+            {
+               "offset" : 12,
+               "value" : "Bégadan"
+            },
+            {
+               "offset" : 21,
+               "value" : "France"
+            }
+         ],
+         "types" : [ "sublocality_level_1", "sublocality", "political", "geocode" ]
+      },
+      {
+         "description" : "Port-des-Barques, France",
+         "id" : "d51db97ae0dbbf492878cc2daa405d4ddcabd151",
+         "matched_substrings" : [
+            {
+               "length" : 16,
+               "offset" : 0
+            }
+         ],
+         "place_id" : "ChIJMW6TAC9DAUgRIIvuYJLTBQQ",
+         "reference" : "CjQwAAAAFcDVCEaCuKQNP03Iqymb_dFkzHhf-4H0G68uS7XIt5LtXYjBAyCdXZwveumq0MXuEhAZPGY0knXJx0tA6IfTfZTKGhQ6o0gbdcSxiUeX9cPxHpH6SqEQKg",
+         "structured_formatting" : {
+            "main_text" : "Port-des-Barques",
+            "main_text_matched_substrings" : [
+               {
+                  "length" : 16,
+                  "offset" : 0
+               }
+            ],
+            "secondary_text" : "France"
+         },
+         "terms" : [
+            {
+               "offset" : 0,
+               "value" : "Port-des-Barques"
+            },
+            {
+               "offset" : 18,
+               "value" : "France"
+            }
+         ],
+         "types" : [ "locality", "political", "geocode" ]
+      },
+      {
+         "description" : "Port-en-Bessin-Huppain, France",
+         "id" : "9771df927bad3c5e2f695d2a9b1dc4ed6bc6d396",
+         "matched_substrings" : [
+            {
+               "length" : 22,
+               "offset" : 0
+            }
+         ],
+         "place_id" : "ChIJr67zPDyqC0gRoOC8T0gUDAQ",
+         "reference" : "CkQ2AAAArWhGXz6QCtF06T-tQ_O-j74984RrsdIJQtYMYG1FGZnY_4vS4TMeMlRXjwNavXBT4x4RWQDjdVV9kSE6Oe05wBIQXOVniOHLF0ifcPfEYDoVMhoUTtxegFzdG6BtCh48B1FQS9hyzzI",
+         "structured_formatting" : {
+            "main_text" : "Port-en-Bessin-Huppain",
+            "main_text_matched_substrings" : [
+               {
+                  "length" : 22,
+                  "offset" : 0
+               }
+            ],
+            "secondary_text" : "France"
+         },
+         "terms" : [
+            {
+               "offset" : 0,
+               "value" : "Port-en-Bessin-Huppain"
+            },
+            {
+               "offset" : 24,
+               "value" : "France"
+            }
+         ],
+         "types" : [ "locality", "political", "geocode" ]
+      },
+      {
+         "description" : "Le Barcarès, France",
+         "id" : "5cef48ebf0ab55d5af98041d62cf1565bc6fa892",
+         "matched_substrings" : [
+            {
+               "length" : 11,
+               "offset" : 0
+            }
+         ],
+         "place_id" : "ChIJFzI8kLpgsBIRAG9nFiGIBwQ",
+         "reference" : "CjQsAAAA-MBKlzUFaWcTr2hXLZTOKf_cQf2BMh1XUWxbHu_rFJaxythBcsnXrUrWhbfQV9GyEhDMkU8iHK7H2eCKvf2p1CwxGhQ2yymq0SA5G-fPSA4Bzb07y-Yy9A",
+         "structured_formatting" : {
+            "main_text" : "Le Barcarès",
+            "main_text_matched_substrings" : [
+               {
+                  "length" : 11,
+                  "offset" : 0
+               }
+            ],
+            "secondary_text" : "France"
+         },
+         "terms" : [
+            {
+               "offset" : 0,
+               "value" : "Le Barcarès"
+            },
+            {
+               "offset" : 13,
+               "value" : "France"
+            }
+         ],
+         "types" : [ "locality", "political", "geocode" ]
+      }
+   ],
+   "status" : "OK"
+}
