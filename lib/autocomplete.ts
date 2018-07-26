@@ -1,33 +1,57 @@
-import * as request from 'request-promise-native';
-import { encode } from './tools';
+import { IAutocompleteQuery, PlaceType } from './definition';
+import { httpRequest } from './http-request';
 
-export interface IAutocompleteQuery {
-  key: string;
-  input: string;
-  language?: string;
-  country?: string;
-  types?: string[];
+interface IStringMatchingResult {
+  length: number;
+  offset: number;
 }
 
-export interface IPrediction {
+interface IGooglePrediction {
+  description: string;
   id: string;
-  name: string;
+  matched_substrings: IStringMatchingResult[];
+  place_id: string;
+  reference: string;
+  structured_formatting: {
+    main_text: string;
+    main_text_matched_substrings: IStringMatchingResult[];
+    secondary_text: string;
+  };
+  terms: [{ offset: number; value: string }];
+  types: PlaceType[];
 }
+
+interface IApiResponse {
+  predictions: IGooglePrediction[];
+  status: string;
+}
+
+const ENDPOINT_URL = 'https://maps.googleapis.com/maps/api/place/autocomplete/json';
 
 /**
- * Consume Google Place Autocomplete API
+ * Consume Google Place Autocomplete API.
+ *
  * @param {IAutocompleteQuery} query
- * @return {Promise<IPrediction[]>}
+ *
+ * @throws {Error} (rejects) if Response status is not 'OK' or 'ZERO_RESULTS'.
+ *
+ * @return Resolve with an array of `IPrediction`, or rejects.
  */
-export async function autocomplete(query: IAutocompleteQuery): Promise<IPrediction[]> {
-  const response = await request({
-    uri:
-      `https://maps.googleapis.com/maps/api/place/autocomplete/json?key=${query.key}&types=(regions)` +
-      encode('language', query.language) +
-      encode('components', query.country, 'country:') +
-      encode('input', query.input),
-    json: true,
-  });
+export async function autocomplete(query: IAutocompleteQuery) {
+  const { key, input, language = '', countries = [], types = '(regions)', placeTypes = [] } = query;
+  const queryParams = {
+    input,
+    key,
+    language,
+    types,
+    // expected url format: "&components=country:fr|country:mo|country:mc"
+    components: countries
+      .filter(country => country && country.trim() !== '')
+      .map(country => `country:${country.trim().toLowerCase()}`)
+      .join('|'),
+  };
+
+  const response: IApiResponse = await httpRequest(ENDPOINT_URL, queryParams);
 
   if (response.status !== 'OK' && response.status !== 'ZERO_RESULTS') {
     throw new Error(`Unexpected autocomplete result: ${response.status}`);
@@ -35,10 +59,9 @@ export async function autocomplete(query: IAutocompleteQuery): Promise<IPredicti
 
   let predictions = response.predictions || [];
 
-  if (query.types && query.types.length) {
-    const types: string[] = query.types;
-    predictions = predictions.filter((prediction: any) => prediction.types.some((type: string) => types.indexOf(type) >= 0));
+  if (placeTypes && placeTypes.length) {
+    predictions = predictions.filter(prediction => prediction.types.some(type => placeTypes.includes(type)));
   }
 
-  return predictions.map((prediction: any) => ({ id: prediction.place_id, name: prediction.description }));
+  return predictions.map(prediction => ({ id: prediction.place_id, name: prediction.description }));
 }

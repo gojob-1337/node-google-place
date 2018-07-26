@@ -1,10 +1,10 @@
 import { request, retrieve } from './mock';
 
-describe('autocomplete', () => {
+describe('retrieve', () => {
   it('validate parameters', async () => {
     await retrieve({ key: 'AzErTy-0123!', id: 'ChIJ-RzUxt8ethIRksIaOl-0tJY', language: 'fr' });
     expect(request).toHaveBeenCalledWith({
-      uri: 'https://maps.googleapis.com/maps/api/place/details/json?key=AzErTy-0123!&placeid=ChIJ-RzUxt8ethIRksIaOl-0tJY&language=fr',
+      uri: 'https://maps.googleapis.com/maps/api/place/details/json?key=AzErTy-0123%21&language=fr&placeid=ChIJ-RzUxt8ethIRksIaOl-0tJY',
       json: true,
     });
   });

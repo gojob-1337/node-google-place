@@ -1,16 +1,22 @@
+jest.mock('request-promise-native');
 import * as fs from 'fs';
 import * as path from 'path';
 import * as queryString from 'query-string';
-import { promisify } from 'util';
+import * as request from 'request-promise-native';
 
 const ASSETS_PATH = path.resolve(path.join(__dirname, 'assets'));
-const readFile = promisify(fs.readFile);
 
-jest.mock('request-promise-native');
-import * as request from 'request-promise-native';
-request.mockImplementation(async (query: any): Promise<any> => {
-  const parameters = queryString.parse(query.uri);
-  const content = await readFile(path.join(ASSETS_PATH, `${parameters.input || parameters.placeid}.json`));
+/**
+ * Get expected responses from ./tests/assets/*.json, based on given
+ * `input` or `placeId`
+ */
+((request as any) as jest.Mock).mockImplementation((query: any): Promise<any> => {
+  const { uri } = query;
+  const queryParam = uri.substring(uri.lastIndexOf('?'));
+  const { input, placeid } = queryString.parse(queryParam);
+  const mockFilename = `${input || placeid || 'INVALID_MOCK'}.json`;
+
+  const content = fs.readFileSync(path.join(ASSETS_PATH, mockFilename));
   return JSON.parse(content.toString());
 });
 
