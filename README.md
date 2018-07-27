@@ -27,7 +27,7 @@ const results = await gp.autocomplete({
     key: 'YOUR_API_KEY',
     input: 'Port-de-Bouc',
     language: 'fr',
-    country: 'fr',
+    countries: ['fr'],
 });
 ```
 
@@ -39,7 +39,7 @@ const results = await gp.autocomplete({
 | key      | string | Google API Key                                                                                         |
 | input    | string | Searched entry                                                                                         |
 | language | string | Language to use (optional) [Google Code](https://developers.google.com/maps/faq?hl=fr#languagesupport) |
-| country  | string | Filter on a country (optional) [ISO 3166-1 Alpha-2](https://fr.wikipedia.org/wiki/ISO_3166-1_alpha-2). |
+| countries  | string[] | Filter on a country (optional) [ISO 3166-1 Alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) |
 
 
 Returns a list of prediction or throw if an error occurred.

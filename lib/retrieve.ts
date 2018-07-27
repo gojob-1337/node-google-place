@@ -1,42 +1,34 @@
-import * as request from 'request-promise-native';
-import { encode, findComponent } from './tools';
+import { IGoogleAddressComponent, IPlace, IPlaceQuery, PlaceType } from './definition';
+import { httpRequest } from './http-request';
 
-export interface IPlaceQuery {
-  key: string;
-  id: string;
-  language: string;
-}
+const ENDPOINT_URL = 'https://maps.googleapis.com/maps/api/place/details/json';
 
-export interface ILocation {
-  lat: number;
-  lng: number;
-}
-
-export interface IPlace {
-  id: string;
-  address: string;
-  location: ILocation;
-  locality: string;
-  countryCode: string;
-  country: string;
+function findComponent(type: PlaceType, components: IGoogleAddressComponent[]): IGoogleAddressComponent | undefined {
+  return components.find(component => component.types.includes(type));
 }
 
 /**
  * Consume Google Place API tp retrieve the details of a place
- * @param {IPlaceQuery} query
- * @return {Promise<IPlace>}
+ *
+ * @param query API Request configuration.
+ *
+ * @throws {Error} (rejects) if Response status is not 'OK' or if no result is provided.
+ *
+ * @return Resolve with an `IPlace` or rejects.
  */
 export async function retrieve(query: IPlaceQuery): Promise<IPlace> {
-  const response = await request({
-    uri: `https://maps.googleapis.com/maps/api/place/details/json?key=${query.key}&placeid=${query.id}` + encode('language', query.language),
-    json: true,
-  });
+  const { id: placeid, key, language } = query;
+  const queryParams = {
+    placeid,
+    key,
+    language,
+  };
+
+  const response = await httpRequest(ENDPOINT_URL, queryParams);
 
   if (response.status !== 'OK') {
     throw new Error(`Unexpected retrieve result: ${response.status}`);
-  }
-
-  if (!response.result) {
+  } else if (!response.result) {
     throw new Error('Result is missing');
   }
 
