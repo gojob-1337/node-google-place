@@ -19,6 +19,7 @@ export type PlaceType =
   | 'administrative_area_level_3'
   | 'country'
   | 'locality'
+  | 'political'
   | 'postal_code'
   | 'sublocality';
 
@@ -40,10 +41,58 @@ export interface IPlace {
   locality: string;
   countryCode: string;
   country: string;
+  postalCode: string;
 }
 
 export interface IGoogleAddressComponent {
   long_name: string;
   short_name: string;
   types: PlaceType[];
+}
+
+export interface INearbySearchQuery {
+  key: string;
+  location: [number, number];
+  radius?: number;
+  rankby?: 'prominence' | 'distance';
+
+  type?: PlaceType;
+  keyword?: string;
+  language?: string;
+  minprice?: string;
+  maxprice?: string;
+  name?: string;
+  pagetoken?: string;
+}
+
+export interface IGeoPoint {
+  lat: number;
+  lng: number;
+}
+
+export interface INearbyResult {
+  geometry: {
+    location: IGeoPoint;
+    viewport: {
+      northeast: IGeoPoint;
+      southwest: IGeoPoint;
+    };
+  };
+  icon: string;
+  id: string;
+  name: string;
+  photos: [
+    {
+      height: number;
+      html_attributions: string[];
+      photo_reference: string;
+      width: number;
+    }
+  ];
+  place_id: string;
+  rating: number;
+  reference: string;
+  scope: string;
+  types: PlaceType[];
+  vicinity: string;
 }

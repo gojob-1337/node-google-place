@@ -2,14 +2,14 @@ import * as queryString from 'query-string';
 import * as request from 'request-promise-native';
 
 export interface IQueryParams {
-  [param: string]: string;
+  [param: string]: string | number | undefined;
 }
 
 export function httpRequest(uri: string, queryParams?: IQueryParams) {
   if (queryParams) {
     const qParams = Object.entries(queryParams).reduce(
       (acc, [key, value]) => {
-        if (value && value.trim() !== '') {
+        if (value && (typeof value === 'number' || value.trim() !== '')) {
           acc[key] = value;
         }
 

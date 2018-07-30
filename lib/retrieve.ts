@@ -34,6 +34,7 @@ export async function retrieve(query: IPlaceQuery): Promise<IPlace> {
 
   const locality = findComponent('locality', response.result.address_components);
   const country = findComponent('country', response.result.address_components);
+  const postalCode = findComponent('postal_code', response.result.address_components);
 
   return {
     id: response.result.place_id,
@@ -42,5 +43,6 @@ export async function retrieve(query: IPlaceQuery): Promise<IPlace> {
     locality: locality ? locality.long_name || locality.short_name : '',
     countryCode: country ? country.short_name : '',
     country: country ? country.long_name : '',
+    postalCode: postalCode ? postalCode.long_name : '',
   };
 }
