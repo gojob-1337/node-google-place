@@ -32,7 +32,6 @@ export async function retrieve(query: IPlaceQuery): Promise<IPlace> {
     throw new Error('Result is missing');
   }
 
-  const postalCode = findComponent('postal_code', response.result.address_components);
   const locality = findComponent('locality', response.result.address_components);
   const administrativeAreaLevel1 = findComponent('administrative_area_level_1', response.result.address_components);
   const administrativeAreaLevel2 = findComponent('administrative_area_level_2', response.result.address_components);
@@ -43,7 +42,6 @@ export async function retrieve(query: IPlaceQuery): Promise<IPlace> {
     id: response.result.place_id,
     address: response.result.formatted_address,
     location: response.result.geometry.location,
-    postalCode: postalCode ? postalCode.long_name : '',
     locality: locality ? locality.long_name || locality.short_name : '',
     administrativeAreaLevel1: administrativeAreaLevel1 ? administrativeAreaLevel1.long_name || administrativeAreaLevel1.short_name : '',
     administrativeAreaLevel2: administrativeAreaLevel2 ? administrativeAreaLevel2.long_name || administrativeAreaLevel2.short_name : '',

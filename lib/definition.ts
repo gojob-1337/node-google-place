@@ -38,7 +38,6 @@ export interface IPlace {
   id: string;
   address: string;
   location: ILocation;
-  postalCode: string;
   locality: string;
   administrativeAreaLevel1: string;
   administrativeAreaLevel2: string;
