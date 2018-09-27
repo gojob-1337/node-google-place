@@ -1,9 +1,11 @@
-import { autocomplete, request } from './mock';
+import { mockedRequest } from './mock';
+
+import { autocomplete } from '../lib/autocomplete';
 
 describe('autocomplete', () => {
   it('validate parameters', async () => {
     await autocomplete({ countries: ['UK'], key: 'AzErTy-0123!', input: 'pdb', language: 'CZ' });
-    expect(request).toHaveBeenCalledWith({
+    expect(mockedRequest).toHaveBeenCalledWith({
       uri:
         'https://maps.googleapis.com/maps/api/place/autocomplete/json?components=country%3Auk&input=pdb&key=AzErTy-0123%21&language=CZ&types=%28regions%29',
       json: true,
@@ -12,7 +14,7 @@ describe('autocomplete', () => {
 
   it('validate optional parameters', async () => {
     await autocomplete({ key: 'AzErTy-0123!', input: 'pdb' });
-    expect(request).toHaveBeenCalledWith({
+    expect(mockedRequest).toHaveBeenCalledWith({
       uri: 'https://maps.googleapis.com/maps/api/place/autocomplete/json?input=pdb&key=AzErTy-0123%21&types=%28regions%29',
       json: true,
     });

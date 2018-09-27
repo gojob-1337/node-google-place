@@ -1,9 +1,11 @@
-import { request, retrieve } from './mock';
+import { mockedRequest } from './mock';
+
+import { retrieve } from '../lib/retrieve';
 
 describe('retrieve', () => {
   it('validate parameters', async () => {
     await retrieve({ key: 'AzErTy-0123!', id: 'ChIJ-RzUxt8ethIRksIaOl-0tJY', language: 'fr' });
-    expect(request).toHaveBeenCalledWith({
+    expect(mockedRequest).toHaveBeenCalledWith({
       uri: 'https://maps.googleapis.com/maps/api/place/details/json?key=AzErTy-0123%21&language=fr&placeid=ChIJ-RzUxt8ethIRksIaOl-0tJY',
       json: true,
     });
@@ -21,6 +23,7 @@ describe('retrieve', () => {
       id: 'ChIJ-RzUxt8ethIRksIaOl-0tJY',
       locality: 'Port-de-Bouc',
       location: { lat: 43.405449, lng: 4.985931 },
+      postalCode: '13110',
     });
   });
 

@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## [Unreleased]
 
 
+## [1.3.0] - 2018-09-32
+
+- add postalCode attribute to the details
+- implement "nearby-search" with a dedicated function
+
 ## [1.2.0] - 2018-09-27
 
 ### Added
