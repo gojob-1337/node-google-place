@@ -15,6 +15,9 @@ describe('retrieve', () => {
     const result = await retrieve({ key: 'AzErTy-0123!', id: 'ChIJ-RzUxt8ethIRksIaOl-0tJY', language: 'fr' });
     expect(result).toEqual({
       address: 'Port-de-Bouc, France',
+      administrativeAreaLevel1: "Provence-Alpes-Côte d'Azur",
+      administrativeAreaLevel2: 'Bouches-du-Rhône',
+      postalCode: '13110',
       country: 'France',
       countryCode: 'FR',
       id: 'ChIJ-RzUxt8ethIRksIaOl-0tJY',

@@ -91,7 +91,10 @@ export interface IPlace {
   id: string;
   address: string;
   location: ILocation;
+  postalCode: string;
   locality: string;
+  administrativeAreaLevel1: string;
+  administrativeAreaLevel2: string;
   countryCode: string;
   country: string;
 }
@@ -99,11 +102,17 @@ export interface IPlace {
 
 As:
 
-|     Name    |  Type  |             Description            |
-|:-----------:|:------:|:-----------------------------------|
-| id          | string | Place id                           |
-| address     | string | Formatted address                  |
-| location    | object | Latitude and longitude coordinates |
-| locality    | string | Locality name (long or short name) |
-| countryCode | string | Country short name                 |
-| country     | string | Country name (long name)           |
+|     Name                 |  Type  |             Description                          |
+|:------------------------:|:------:|:-------------------------------------------------|
+| id                       | string | Place id                                         |
+| address                  | string | Formatted address                                |
+| location                 | object | Latitude and longitude coordinates               |
+| postalCode               | string | Postal code                                      |
+| locality                 | string | Locality name (long or short name)               |
+| administrativeAreaLevel1 | string | Administrative Area Level 1 (long or short name) |
+| administrativeAreaLevel2 | string | Administrative Area Level 2 (long or short name) |
+| countryCode              | string | Country short name                               |
+| country                  | string | Country name (long name)                         |
+
+
+_postalCode, administrativeAreaLevel1 or administrativeAreaLevel2 may be empty string_

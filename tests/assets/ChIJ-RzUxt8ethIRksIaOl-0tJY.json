@@ -18,6 +18,11 @@
             "types" : [ "administrative_area_level_1", "political" ]
          },
          {
+            "long_name" : "13110",
+            "short_name" : "13110",
+            "types" : [ "postal_code" ]
+         },
+         {
             "long_name" : "France",
             "short_name" : "FR",
             "types" : [ "country", "political" ]
