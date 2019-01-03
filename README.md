@@ -62,7 +62,7 @@ As:
 #### gp.retrieve(`query`)
 
 ```typescript
-const place  gp.retrieve({
+const place = gp.retrieve({
     key: 'YOUR_API_KEY',
     id: 'ChIJ-RzUxt8ethIRksIaOl-0tJY',
     language: 'fr',
