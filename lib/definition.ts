@@ -21,6 +21,8 @@ export type PlaceType =
   | 'locality'
   | 'political'
   | 'postal_code'
+  | 'route'
+  | 'street_number'
   | 'sublocality';
 
 export interface IPlaceQuery {
@@ -44,6 +46,8 @@ export interface IPlace {
   countryCode: string;
   country: string;
   postalCode: string;
+  streetNumber: string;
+  route: string;
 }
 
 export interface IGoogleAddressComponent {

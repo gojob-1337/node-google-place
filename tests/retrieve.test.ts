@@ -11,19 +11,39 @@ describe('retrieve', () => {
     });
   });
 
-  it('returns results', async () => {
-    const result = await retrieve({ key: 'AzErTy-0123!', id: 'ChIJ-RzUxt8ethIRksIaOl-0tJY', language: 'fr' });
+  it('returns city results', async () => {
+    const id = 'ChIJ-RzUxt8ethIRksIaOl-0tJY';
+    const result = await retrieve({ id, key: 'AzErTy-0123!', language: 'fr' });
     expect(result).toEqual({
+      id,
+      streetNumber: '',
+      route: '',
       address: 'Port-de-Bouc, France',
       administrativeAreaLevel1: "Provence-Alpes-Côte d'Azur",
       administrativeAreaLevel2: 'Bouches-du-Rhône',
-      postalCode: '13110',
       country: 'France',
       countryCode: 'FR',
-      id: 'ChIJ-RzUxt8ethIRksIaOl-0tJY',
       locality: 'Port-de-Bouc',
       location: { lat: 43.405449, lng: 4.985931 },
       postalCode: '13110',
+    });
+  });
+
+  it('returns address results', async () => {
+    const id = 'ChIJaZSfVj9y5kcRFepem3_h2s8';
+    const result = await retrieve({ id, key: 'AzErTy-0123!', language: 'fr' });
+    expect(result).toEqual({
+      id,
+      address: '40 Avenue des Terroirs de France, 75012 Paris, France',
+      administrativeAreaLevel1: 'Île-de-France',
+      administrativeAreaLevel2: 'Paris',
+      country: 'France',
+      countryCode: 'FR',
+      locality: 'Paris',
+      location: { lat: 48.8316638, lng: 2.3885332 },
+      postalCode: '75012',
+      route: 'Avenue des Terroirs de France',
+      streetNumber: '40',
     });
   });
 
