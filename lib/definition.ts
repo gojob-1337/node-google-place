@@ -102,3 +102,9 @@ export interface INearbyResult {
   types: PlaceType[];
   vicinity: string;
 }
+
+export interface IReverseGeocodeQuery {
+  key: string;
+  latlng: IGeoPoint | string;
+  language?: string;
+}

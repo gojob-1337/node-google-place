@@ -14,10 +14,11 @@ const ASSETS_PATH = path.resolve(path.join(__dirname, 'assets'));
 ((mockedRequest as any) as jest.Mock).mockImplementation((query: any): Promise<any> => {
   const { uri } = query;
   const queryParam = uri.substring(uri.lastIndexOf('?'));
-  const { input, placeid } = queryString.parse(queryParam);
-  const mockFilename = `${input || placeid || 'INVALID_MOCK'}.json`;
+  const { input, placeid, latlng } = queryString.parse(queryParam);
+  const mockFilename = `${input || placeid || latlng || 'INVALID_MOCK'}.json`;
 
   const content = fs.readFileSync(path.join(ASSETS_PATH, mockFilename));
+
   return JSON.parse(content.toString());
 });
 
