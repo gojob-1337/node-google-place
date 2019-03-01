@@ -4,7 +4,7 @@ import { httpRequest } from './http-request';
 
 const ENDPOINT_URL = 'https://maps.googleapis.com/maps/api/geocode/json';
 
-export async function reverseGeocode(query: IReverseGeocodeQuery): Promise<IPlace> {
+export async function reverseGeocode(query: IReverseGeocodeQuery) {
   const { key, language } = query;
   let { latlng } = query;
 
@@ -31,7 +31,7 @@ export async function reverseGeocode(query: IReverseGeocodeQuery): Promise<IPlac
       result.address_components,
     );
 
-    return {
+    const place: IPlace = {
       id: result.place_id,
       address: result.formatted_address,
       location: result.geometry.location,
@@ -46,5 +46,7 @@ export async function reverseGeocode(query: IReverseGeocodeQuery): Promise<IPlac
       streetNumber: streetNumber.short_name,
       route: route.long_name,
     };
-  });
+
+    return place;
+  }) as IPlace[];
 }
