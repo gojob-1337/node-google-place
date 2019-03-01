@@ -1,0 +1,511 @@
+{
+  "plus_code" : {
+     "compound_code" : "GCHW+VX Aix-en-Provence, France",
+     "global_code" : "8FM7GCHW+VX"
+  },
+  "results" : [
+     {
+        "address_components" : [
+           {
+              "long_name" : "3",
+              "short_name" : "3",
+              "types" : [ "street_number" ]
+           },
+           {
+              "long_name" : "Rue des Cordeliers",
+              "short_name" : "Rue des Cordeliers",
+              "types" : [ "route" ]
+           },
+           {
+              "long_name" : "Aix-en-Provence",
+              "short_name" : "Aix-en-Provence",
+              "types" : [ "locality", "political" ]
+           },
+           {
+              "long_name" : "Bouches-du-Rhône",
+              "short_name" : "Bouches-du-Rhône",
+              "types" : [ "administrative_area_level_2", "political" ]
+           },
+           {
+              "long_name" : "Provence-Alpes-Côte d'Azur",
+              "short_name" : "Provence-Alpes-Côte d'Azur",
+              "types" : [ "administrative_area_level_1", "political" ]
+           },
+           {
+              "long_name" : "France",
+              "short_name" : "FR",
+              "types" : [ "country", "political" ]
+           },
+           {
+              "long_name" : "13100",
+              "short_name" : "13100",
+              "types" : [ "postal_code" ]
+           }
+        ],
+        "formatted_address" : "3 Rue des Cordeliers, 13100 Aix-en-Provence, France",
+        "geometry" : {
+           "location" : {
+              "lat" : 43.5295506,
+              "lng" : 5.4472602
+           },
+           "location_type" : "ROOFTOP",
+           "viewport" : {
+              "northeast" : {
+                 "lat" : 43.5308995802915,
+                 "lng" : 5.448609180291502
+              },
+              "southwest" : {
+                 "lat" : 43.5282016197085,
+                 "lng" : 5.445911219708497
+              }
+           }
+        },
+        "place_id" : "ChIJ8ZBGJ72NyRIRGmMZtrCkjxw",
+        "plus_code" : {
+           "compound_code" : "GCHW+RW Aix-en-Provence, France",
+           "global_code" : "8FM7GCHW+RW"
+        },
+        "types" : [ "street_address" ]
+     },
+     {
+        "address_components" : [
+           {
+              "long_name" : "1",
+              "short_name" : "1",
+              "types" : [ "street_number" ]
+           },
+           {
+              "long_name" : "Rue des Cordeliers",
+              "short_name" : "Rue des Cordeliers",
+              "types" : [ "route" ]
+           },
+           {
+              "long_name" : "Aix-en-Provence",
+              "short_name" : "Aix-en-Provence",
+              "types" : [ "locality", "political" ]
+           },
+           {
+              "long_name" : "Bouches-du-Rhône",
+              "short_name" : "Bouches-du-Rhône",
+              "types" : [ "administrative_area_level_2", "political" ]
+           },
+           {
+              "long_name" : "Provence-Alpes-Côte d'Azur",
+              "short_name" : "Provence-Alpes-Côte d'Azur",
+              "types" : [ "administrative_area_level_1", "political" ]
+           },
+           {
+              "long_name" : "France",
+              "short_name" : "FR",
+              "types" : [ "country", "political" ]
+           },
+           {
+              "long_name" : "13100",
+              "short_name" : "13100",
+              "types" : [ "postal_code" ]
+           }
+        ],
+        "formatted_address" : "1 Rue des Cordeliers, 13100 Aix-en-Provence, France",
+        "geometry" : {
+           "location" : {
+              "lat" : 43.529625,
+              "lng" : 5.4475289
+           },
+           "location_type" : "RANGE_INTERPOLATED",
+           "viewport" : {
+              "northeast" : {
+                 "lat" : 43.53097398029149,
+                 "lng" : 5.448877880291502
+              },
+              "southwest" : {
+                 "lat" : 43.5282760197085,
+                 "lng" : 5.446179919708498
+              }
+           }
+        },
+        "place_id" : "EjMxIFJ1ZSBkZXMgQ29yZGVsaWVycywgMTMxMDAgQWl4LWVuLVByb3ZlbmNlLCBGcmFuY2UiGhIYChQKEgmxv4YgvY3JEhEYyqA2PG_WWxAB",
+        "types" : [ "street_address" ]
+     },
+     {
+        "address_components" : [
+           {
+              "long_name" : "Rue des Cordeliers",
+              "short_name" : "Rue des Cordeliers",
+              "types" : [ "route" ]
+           },
+           {
+              "long_name" : "Aix-en-Provence",
+              "short_name" : "Aix-en-Provence",
+              "types" : [ "locality", "political" ]
+           },
+           {
+              "long_name" : "Bouches-du-Rhône",
+              "short_name" : "Bouches-du-Rhône",
+              "types" : [ "administrative_area_level_2", "political" ]
+           },
+           {
+              "long_name" : "Provence-Alpes-Côte d'Azur",
+              "short_name" : "Provence-Alpes-Côte d'Azur",
+              "types" : [ "administrative_area_level_1", "political" ]
+           },
+           {
+              "long_name" : "France",
+              "short_name" : "FR",
+              "types" : [ "country", "political" ]
+           },
+           {
+              "long_name" : "13100",
+              "short_name" : "13100",
+              "types" : [ "postal_code" ]
+           }
+        ],
+        "formatted_address" : "Rue des Cordeliers, 13100 Aix-en-Provence, France",
+        "geometry" : {
+           "bounds" : {
+              "northeast" : {
+                 "lat" : 43.5296511,
+                 "lng" : 5.4477423
+              },
+              "southwest" : {
+                 "lat" : 43.5295747,
+                 "lng" : 5.4471178
+              }
+           },
+           "location" : {
+              "lat" : 43.5296129,
+              "lng" : 5.44743
+           },
+           "location_type" : "GEOMETRIC_CENTER",
+           "viewport" : {
+              "northeast" : {
+                 "lat" : 43.5309618802915,
+                 "lng" : 5.448779030291503
+              },
+              "southwest" : {
+                 "lat" : 43.5282639197085,
+                 "lng" : 5.446081069708498
+              }
+           }
+        },
+        "place_id" : "ChIJsb-GIL2NyRIRGcqgNjxv1ls",
+        "types" : [ "route" ]
+     },
+     {
+        "address_components" : [
+           {
+              "long_name" : "Vieille Ville",
+              "short_name" : "Vieille Ville",
+              "types" : [ "neighborhood", "political" ]
+           },
+           {
+              "long_name" : "Aix-en-Provence",
+              "short_name" : "Aix-en-Provence",
+              "types" : [ "locality", "political" ]
+           },
+           {
+              "long_name" : "Bouches-du-Rhone",
+              "short_name" : "Bouches-du-Rhone",
+              "types" : [ "administrative_area_level_2", "political" ]
+           },
+           {
+              "long_name" : "Provence-Alpes-Côte d'Azur",
+              "short_name" : "Provence-Alpes-Côte d'Azur",
+              "types" : [ "administrative_area_level_1", "political" ]
+           },
+           {
+              "long_name" : "France",
+              "short_name" : "FR",
+              "types" : [ "country", "political" ]
+           },
+           {
+              "long_name" : "13100",
+              "short_name" : "13100",
+              "types" : [ "postal_code" ]
+           }
+        ],
+        "formatted_address" : "Vieille Ville, 13100 Aix-en-Provence, France",
+        "geometry" : {
+           "bounds" : {
+              "northeast" : {
+                 "lat" : 43.532794,
+                 "lng" : 5.4554599
+              },
+              "southwest" : {
+                 "lat" : 43.526307,
+                 "lng" : 5.443258999999999
+              }
+           },
+           "location" : {
+              "lat" : 43.5283925,
+              "lng" : 5.4476422
+           },
+           "location_type" : "APPROXIMATE",
+           "viewport" : {
+              "northeast" : {
+                 "lat" : 43.532794,
+                 "lng" : 5.4554599
+              },
+              "southwest" : {
+                 "lat" : 43.526307,
+                 "lng" : 5.443258999999999
+              }
+           }
+        },
+        "place_id" : "ChIJfUrvZL2NyRIRUpKzhV_vh9A",
+        "types" : [ "neighborhood", "political" ]
+     },
+     {
+        "address_components" : [
+           {
+              "long_name" : "13100",
+              "short_name" : "13100",
+              "types" : [ "postal_code" ]
+           },
+           {
+              "long_name" : "Saint-Antonin-sur-Bayon",
+              "short_name" : "Saint-Antonin-sur-Bayon",
+              "types" : [ "locality", "political" ]
+           },
+           {
+              "long_name" : "Bouches-du-Rhone",
+              "short_name" : "Bouches-du-Rhone",
+              "types" : [ "administrative_area_level_2", "political" ]
+           },
+           {
+              "long_name" : "Provence-Alpes-Côte d'Azur",
+              "short_name" : "Provence-Alpes-Côte d'Azur",
+              "types" : [ "administrative_area_level_1", "political" ]
+           },
+           {
+              "long_name" : "France",
+              "short_name" : "FR",
+              "types" : [ "country", "political" ]
+           }
+        ],
+        "formatted_address" : "13100 Saint-Antonin-sur-Bayon, France",
+        "geometry" : {
+           "bounds" : {
+              "northeast" : {
+                 "lat" : 43.6045202,
+                 "lng" : 5.638302500000001
+              },
+              "southwest" : {
+                 "lat" : 43.4989934,
+                 "lng" : 5.4353712
+              }
+           },
+           "location" : {
+              "lat" : 43.5338335,
+              "lng" : 5.509246999999999
+           },
+           "location_type" : "APPROXIMATE",
+           "viewport" : {
+              "northeast" : {
+                 "lat" : 43.6045202,
+                 "lng" : 5.638302500000001
+              },
+              "southwest" : {
+                 "lat" : 43.4989934,
+                 "lng" : 5.4353712
+              }
+           }
+        },
+        "place_id" : "ChIJtcHVsaePyRIRMEsgUqkZCBw",
+        "postcode_localities" : [
+           "Aix-en-Provence",
+           "Beaurecueil",
+           "Le Tholonet",
+           "Saint-Antonin-sur-Bayon",
+           "Saint-Marc-Jaumegarde"
+        ],
+        "types" : [ "postal_code" ]
+     },
+     {
+        "address_components" : [
+           {
+              "long_name" : "Aix-en-Provence",
+              "short_name" : "Aix-en-Provence",
+              "types" : [ "locality", "political" ]
+           },
+           {
+              "long_name" : "Bouches-du-Rhone",
+              "short_name" : "Bouches-du-Rhone",
+              "types" : [ "administrative_area_level_2", "political" ]
+           },
+           {
+              "long_name" : "Provence-Alpes-Côte d'Azur",
+              "short_name" : "Provence-Alpes-Côte d'Azur",
+              "types" : [ "administrative_area_level_1", "political" ]
+           },
+           {
+              "long_name" : "France",
+              "short_name" : "FR",
+              "types" : [ "country", "political" ]
+           }
+        ],
+        "formatted_address" : "Aix-en-Provence, France",
+        "geometry" : {
+           "bounds" : {
+              "northeast" : {
+                 "lat" : 43.62598,
+                 "lng" : 5.506365
+              },
+              "southwest" : {
+                 "lat" : 43.445968,
+                 "lng" : 5.269528999999999
+              }
+           },
+           "location" : {
+              "lat" : 43.529742,
+              "lng" : 5.447426999999999
+           },
+           "location_type" : "APPROXIMATE",
+           "viewport" : {
+              "northeast" : {
+                 "lat" : 43.62598,
+                 "lng" : 5.506365
+              },
+              "southwest" : {
+                 "lat" : 43.445968,
+                 "lng" : 5.269528999999999
+              }
+           }
+        },
+        "place_id" : "ChIJWRK5BKONyRIRo4i2yL5TuVw",
+        "types" : [ "locality", "political" ]
+     },
+     {
+        "address_components" : [
+           {
+              "long_name" : "Bouches-du-Rhone",
+              "short_name" : "Bouches-du-Rhone",
+              "types" : [ "administrative_area_level_2", "political" ]
+           },
+           {
+              "long_name" : "Provence-Alpes-Côte d'Azur",
+              "short_name" : "Provence-Alpes-Côte d'Azur",
+              "types" : [ "administrative_area_level_1", "political" ]
+           },
+           {
+              "long_name" : "France",
+              "short_name" : "FR",
+              "types" : [ "country", "political" ]
+           }
+        ],
+        "formatted_address" : "Bouches-du-Rhone, France",
+        "geometry" : {
+           "bounds" : {
+              "northeast" : {
+                 "lat" : 43.924136,
+                 "lng" : 5.8134309
+              },
+              "southwest" : {
+                 "lat" : 43.1573841,
+                 "lng" : 4.230207
+              }
+           },
+           "location" : {
+              "lat" : 43.59116789999999,
+              "lng" : 5.3102505
+           },
+           "location_type" : "APPROXIMATE",
+           "viewport" : {
+              "northeast" : {
+                 "lat" : 43.924136,
+                 "lng" : 5.8134309
+              },
+              "southwest" : {
+                 "lat" : 43.1573841,
+                 "lng" : 4.230207
+              }
+           }
+        },
+        "place_id" : "ChIJWxNFLN8CthIRQCaP_aUZCAM",
+        "types" : [ "administrative_area_level_2", "political" ]
+     },
+     {
+        "address_components" : [
+           {
+              "long_name" : "Provence-Alpes-Côte d'Azur",
+              "short_name" : "Provence-Alpes-Côte d'Azur",
+              "types" : [ "administrative_area_level_1", "political" ]
+           },
+           {
+              "long_name" : "France",
+              "short_name" : "FR",
+              "types" : [ "country", "political" ]
+           }
+        ],
+        "formatted_address" : "Provence-Alpes-Côte d'Azur, France",
+        "geometry" : {
+           "bounds" : {
+              "northeast" : {
+                 "lat" : 45.12685099999999,
+                 "lng" : 7.718992999999998
+              },
+              "southwest" : {
+                 "lat" : 42.98199810000001,
+                 "lng" : 4.230207
+              }
+           },
+           "location" : {
+              "lat" : 43.9351691,
+              "lng" : 6.0679194
+           },
+           "location_type" : "APPROXIMATE",
+           "viewport" : {
+              "northeast" : {
+                 "lat" : 45.12685099999999,
+                 "lng" : 7.718992999999998
+              },
+              "southwest" : {
+                 "lat" : 42.98199810000001,
+                 "lng" : 4.230207
+              }
+           }
+        },
+        "place_id" : "ChIJrVP5ihlothIRp9EWPSaQFrc",
+        "types" : [ "administrative_area_level_1", "political" ]
+     },
+     {
+        "address_components" : [
+           {
+              "long_name" : "France",
+              "short_name" : "FR",
+              "types" : [ "country", "political" ]
+           }
+        ],
+        "formatted_address" : "France",
+        "geometry" : {
+           "bounds" : {
+              "northeast" : {
+                 "lat" : 51.1241999,
+                 "lng" : 9.6624999
+              },
+              "southwest" : {
+                 "lat" : 41.31433,
+                 "lng" : -5.5591
+              }
+           },
+           "location" : {
+              "lat" : 46.227638,
+              "lng" : 2.213749
+           },
+           "location_type" : "APPROXIMATE",
+           "viewport" : {
+              "northeast" : {
+                 "lat" : 51.1241999,
+                 "lng" : 9.6624999
+              },
+              "southwest" : {
+                 "lat" : 41.31433,
+                 "lng" : -5.5591
+              }
+           }
+        },
+        "place_id" : "ChIJMVd4MymgVA0R99lHx5Y__Ws",
+        "types" : [ "country", "political" ]
+     }
+  ],
+  "status" : "OK"
+}

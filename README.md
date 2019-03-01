@@ -116,3 +116,23 @@ As:
 
 
 _postalCode, administrativeAreaLevel1 or administrativeAreaLevel2 may be empty string_
+
+#### gp.reverseGeocode(opts)
+
+```typescript
+const place = gp.reverseGeocode({
+    key: 'YOUR_API_KEY',
+    latlng: 'XXX,YYY',
+    language: 'fr',
+});
+```
+
+As:
+
+|   Name   |  Type  |                                         Description                                                    |
+|:--------:|:------:|:-------------------------------------------------------------------------------------------------------|
+| key      | string | Google API Key                                                                                         |
+| latlng   | string | Latitude and longitude coordinates (coma separated)                                                    |
+| language | string | Language to use (optional) [Google Code](https://developers.google.com/maps/faq?hl=fr#languagesupport) |
+
+Find an address from a location coordinates. Returns a `IPlace`.

@@ -1,13 +1,11 @@
 import { IGoogleAddressComponent, IPlace, IPlaceQuery, PlaceType } from './definition';
+import { extractAddress } from './extract-address';
 import { httpRequest } from './http-request';
 
 const ENDPOINT_URL = 'https://maps.googleapis.com/maps/api/place/details/json';
 
-/** For a given `type`, provide a predicate looking for `type` in the types of the input component */
-const findByType = (type: PlaceType) => (component: IGoogleAddressComponent) => component.types.includes(type);
-
 /**
- * Consume Google Place API tp retrieve the details of a place
+ * Consume Google Place API to retrieve the details of a place
  *
  * @param query API Request configuration.
  *
@@ -31,20 +29,9 @@ export async function retrieve(query: IPlaceQuery): Promise<IPlace> {
     throw new Error('Result is missing');
   }
 
-  const componentsKeys: PlaceType[] = [
-    'street_number',
-    'route',
-    'locality',
-    'administrative_area_level_1',
-    'administrative_area_level_2',
-    'country',
-    'postal_code',
-  ];
-  const defaultComponent = { long_name: '', short_name: '', types: [] };
-  // destructure components matching `componentsKeys`
-  const [streetNumber, route, locality, administrativeAreaLevel1, administrativeAreaLevel2, country, postalCode] = componentsKeys
-    .map(findByType)
-    .map(fn => (response.result.address_components || []).find(fn) || defaultComponent);
+  const { streetNumber, route, locality, administrativeAreaLevel1, administrativeAreaLevel2, country, postalCode } = extractAddress(
+    response.result.address_components,
+  );
 
   return {
     id: response.result.place_id,
