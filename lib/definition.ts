@@ -5,6 +5,7 @@ export interface IAutocompleteQuery {
   countries?: string[];
   types?: AutocompleteResultType;
   placeTypes?: PlaceType[];
+  location?: [number, number];
 }
 
 export interface IPrediction {

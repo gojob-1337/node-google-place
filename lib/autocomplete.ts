@@ -38,12 +38,13 @@ const ENDPOINT_URL = 'https://maps.googleapis.com/maps/api/place/autocomplete/js
  * @return Resolve with an array of `IPrediction`, or rejects.
  */
 export async function autocomplete(query: IAutocompleteQuery) {
-  const { key, input, language = '', countries = [], types = '(regions)', placeTypes = [] } = query;
+  const { key, input, language = '', countries = [], types = '(regions)', placeTypes = [], location = [] } = query;
   const queryParams = {
     input,
     key,
     language,
     types,
+    location: location.join(','),
     // expected url format: "&components=country:fr|country:mo|country:mc"
     components: countries
       .filter(country => country && country.trim() !== '')
