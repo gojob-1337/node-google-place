@@ -4,10 +4,10 @@ import { autocomplete } from '../lib/autocomplete';
 
 describe('autocomplete', () => {
   it('validate parameters', async () => {
-    await autocomplete({ countries: ['UK'], key: 'AzErTy-0123!', input: 'pdb', language: 'CZ' });
+    await autocomplete({ countries: ['UK'], key: 'AzErTy-0123!', input: 'pdb', language: 'CZ', location: [8.8, 4.4] });
     expect(mockedRequest).toHaveBeenCalledWith({
       uri:
-        'https://maps.googleapis.com/maps/api/place/autocomplete/json?components=country%3Auk&input=pdb&key=AzErTy-0123%21&language=CZ&types=%28regions%29',
+        'https://maps.googleapis.com/maps/api/place/autocomplete/json?components=country%3Auk&input=pdb&key=AzErTy-0123%21&language=CZ&location=8.8%2C4.4&types=%28regions%29',
       json: true,
     });
   });
