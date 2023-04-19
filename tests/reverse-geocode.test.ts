@@ -26,6 +26,7 @@ describe('geocode', () => {
         location: { lat: 43.5295506, lng: 5.4472602 },
         postalCode: '13100',
         route: 'Rue des Cordeliers',
+        stateCode: "Provence-Alpes-Côte d'Azur",
         streetNumber: '3',
       },
       {
@@ -39,6 +40,7 @@ describe('geocode', () => {
         location: { lat: 43.529625, lng: 5.4475289 },
         postalCode: '13100',
         route: 'Rue des Cordeliers',
+        stateCode: "Provence-Alpes-Côte d'Azur",
         streetNumber: '1',
       },
       {
@@ -52,6 +54,7 @@ describe('geocode', () => {
         location: { lat: 43.5296129, lng: 5.44743 },
         postalCode: '13100',
         route: 'Rue des Cordeliers',
+        stateCode: "Provence-Alpes-Côte d'Azur",
         streetNumber: '',
       },
       {
@@ -65,6 +68,7 @@ describe('geocode', () => {
         location: { lat: 43.5283925, lng: 5.4476422 },
         postalCode: '13100',
         route: '',
+        stateCode: "Provence-Alpes-Côte d'Azur",
         streetNumber: '',
       },
       {
@@ -78,6 +82,7 @@ describe('geocode', () => {
         location: { lat: 43.5338335, lng: 5.509246999999999 },
         postalCode: '13100',
         route: '',
+        stateCode: "Provence-Alpes-Côte d'Azur",
         streetNumber: '',
       },
       {
@@ -91,6 +96,7 @@ describe('geocode', () => {
         location: { lat: 43.529742, lng: 5.447426999999999 },
         postalCode: '',
         route: '',
+        stateCode: "Provence-Alpes-Côte d'Azur",
         streetNumber: '',
       },
       {
@@ -104,6 +110,7 @@ describe('geocode', () => {
         location: { lat: 43.59116789999999, lng: 5.3102505 },
         postalCode: '',
         route: '',
+        stateCode: "Provence-Alpes-Côte d'Azur",
         streetNumber: '',
       },
       {
@@ -117,6 +124,7 @@ describe('geocode', () => {
         location: { lat: 43.9351691, lng: 6.0679194 },
         postalCode: '',
         route: '',
+        stateCode: "Provence-Alpes-Côte d'Azur",
         streetNumber: '',
       },
       {
@@ -130,6 +138,7 @@ describe('geocode', () => {
         location: { lat: 46.227638, lng: 2.213749 },
         postalCode: '',
         route: '',
+        stateCode: '',
         streetNumber: '',
       },
     ]);

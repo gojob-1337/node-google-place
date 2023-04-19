@@ -18,6 +18,7 @@ describe('retrieve', () => {
       id,
       streetNumber: '',
       route: '',
+      stateCode: "Provence-Alpes-Côte d'Azur",
       address: 'Port-de-Bouc, France',
       administrativeAreaLevel1: "Provence-Alpes-Côte d'Azur",
       administrativeAreaLevel2: 'Bouches-du-Rhône',
@@ -43,7 +44,28 @@ describe('retrieve', () => {
       location: { lat: 48.8316638, lng: 2.3885332 },
       postalCode: '75012',
       route: 'Avenue des Terroirs de France',
+      stateCode: 'Île-de-France',
       streetNumber: '40',
+    });
+  });
+
+  it('returns state short code (usa address)', async () => {
+    const id = 'ChIJs9ETUBW9-IcRdZOTQ-uLQz0';
+    const result = await retrieve({ id, key: 'AzErTy-0123!', language: 'en' });
+
+    expect(result).toEqual({
+      id,
+      address: 'Eau Claire, WI, USA',
+      administrativeAreaLevel1: 'Wisconsin',
+      administrativeAreaLevel2: 'Eau Claire County',
+      country: 'United States',
+      countryCode: 'US',
+      locality: 'Eau Claire',
+      location: { lat: 44.811349, lng: -91.4984941 },
+      postalCode: '',
+      route: '',
+      stateCode: 'WI',
+      streetNumber: '',
     });
   });
 

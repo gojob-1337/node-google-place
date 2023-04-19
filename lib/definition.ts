@@ -44,6 +44,7 @@ export interface IPlace {
   locality: string;
   administrativeAreaLevel1: string;
   administrativeAreaLevel2: string;
+  stateCode: string;
   countryCode: string;
   country: string;
   postalCode: string;

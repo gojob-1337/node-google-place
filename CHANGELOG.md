@@ -6,6 +6,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [1.8.0] - 2023-04-20
+
+- include `stateCode` in `retrieve` and `reverse-geocode`
 
 ## [1.5.0] - 2019-01-16
 

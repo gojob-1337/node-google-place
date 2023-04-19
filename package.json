@@ -1,10 +1,14 @@
 {
     "name": "@gojob/google-place",
-    "version": "1.7.0",
+    "version": "1.8.0",
     "license": "MIT",
     "description": "A small node module to use the Google Place API written in typescript",
     "engines": {
         "node": ">= 8.0.0"
+    },
+    "volta": {
+        "node": "8.17.0",
+        "yarn": "1.22.19"
     },
     "main": "./dist/index.js",
     "types": "./dist/index.d.ts",
