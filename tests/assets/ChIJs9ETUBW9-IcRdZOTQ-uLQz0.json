@@ -1,0 +1,139 @@
+{
+  "html_attributions" : [],
+  "result" : {
+    "address_components" : [
+      {
+        "long_name" : "Eau Claire",
+        "short_name" : "Eau Claire",
+        "types" : [ "locality", "political" ]
+      },
+      {
+        "long_name" : "Eau Claire County",
+        "short_name" : "Eau Claire County",
+        "types" : [ "administrative_area_level_2", "political" ]
+      },
+      {
+        "long_name" : "Wisconsin",
+        "short_name" : "WI",
+        "types" : [ "administrative_area_level_1", "political" ]
+      },
+      {
+        "long_name" : "United States",
+        "short_name" : "US",
+        "types" : [ "country", "political" ]
+      }
+    ],
+    "adr_address" : "\u003cspan class=\"locality\"\u003eEau Claire\u003c/span\u003e, \u003cspan class=\"region\"\u003eWI\u003c/span\u003e, \u003cspan class=\"country-name\"\u003eUSA\u003c/span\u003e",
+    "formatted_address" : "Eau Claire, WI, USA",
+    "geometry" : {
+      "location" : {
+        "lat" : 44.811349,
+        "lng" : -91.4984941
+      },
+      "viewport" : {
+        "northeast" : {
+          "lat" : 44.87920585488481,
+          "lng" : -91.36772899529119
+        },
+        "southwest" : {
+          "lat" : 44.76021794399372,
+          "lng" : -91.59482003612513
+        }
+      }
+    },
+    "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/geocode-71.png",
+    "icon_background_color" : "#7B9EB0",
+    "icon_mask_base_uri" : "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+    "name" : "Eau Claire",
+    "photos" : [
+      {
+        "height" : 4096,
+        "html_attributions" : [
+          "\u003ca href=\"https://maps.google.com/maps/contrib/106908446054162689538\"\u003eErik Anderson\u003c/a\u003e"
+        ],
+        "photo_reference" : "AUjq9jnXhA97AQI2MA6tbT_dgYU_Y2U4UajMxMrHYHXNBJv0DzUOkRs7T9gM2wBzf2EtOH_70UGoCdcM1u9gfEvByD1UuMYUs33i-0dxOMs1oL3zEplMkqB3Yh6GQnmycyzjbb5kN6nG7y6qvemfZZHSRiZsK7DIaeAQQi5bpYsfewdKHDNz",
+        "width" : 3072
+      },
+      {
+        "height" : 2448,
+        "html_attributions" : [
+          "\u003ca href=\"https://maps.google.com/maps/contrib/112830079544256790694\"\u003eDaniel Reeves\u003c/a\u003e"
+        ],
+        "photo_reference" : "AUjq9jnPYrqQr_iWBejTbgNOcVBWzgTaq7YIuGFtpQWMls4r0W4WzVx5EE9jM8VldIYtSkzXIM9IjHoSVEHWaz_ZrJuD65haV630B_wdaIagNG7J1yYmPuxzNZdKX-7gf6maUkVxm8du-1JFl6lQ3qYTURiYWEVCbI9GVWxkxchTqcKgsBWJ",
+        "width" : 3264
+      },
+      {
+        "height" : 4000,
+        "html_attributions" : [
+          "\u003ca href=\"https://maps.google.com/maps/contrib/117177889131194625297\"\u003eMatthew Davies\u003c/a\u003e"
+        ],
+        "photo_reference" : "AUjq9jkNYxRubKrLbzLQ2-OM6S5RAdnqNLFDjHMK8sIE-KPdvYfs_w93vThcNt_HsuEx-ygH6Qr22uMGqD_fJdJioAPobcK1HUvturYvQ_lxpBF1oW-uto_BTkWfzrebxm1VCOd1YqPlV2cE8yt-lYeBDHircJ3uotirWz9XzwMOh1GOYho",
+        "width" : 3000
+      },
+      {
+        "height" : 4000,
+        "html_attributions" : [
+          "\u003ca href=\"https://maps.google.com/maps/contrib/109582121736125525600\"\u003eElena Green\u003c/a\u003e"
+        ],
+        "photo_reference" : "AUjq9jkIlaIw_Q4WGSGS0TXFjHl0BrIAASFURLqoyTM7XgOv8LFl7ufdtUJ0Fy7MtlpTV_OSwotL1ryNgWyIvUjkhiB05eKdukyeb7CJlbudycI-V1qinkezpNx6KchBDh3rQSIhsZwMlj0CAR2NkkeD3dzwVccd_nYv4oHM0NWYz5hlLWQ",
+        "width" : 2250
+      },
+      {
+        "height" : 3472,
+        "html_attributions" : [
+          "\u003ca href=\"https://maps.google.com/maps/contrib/112830079544256790694\"\u003eDaniel Reeves\u003c/a\u003e"
+        ],
+        "photo_reference" : "AUjq9jm9R86gHLZQHo_8ePmtKtd9qorX0twc8cX0giBkJY109UnOM7gA1sVbspJuSNsIdeiXOmLUNIlUFJpbJxr5OB83yw6wRvyhGO5Mow_PyrkGJFM40IZJ1asfzP2xi8BPzDa68eJQf8xBUKPO8PgnpN8YM9tFFvO-VfwzosBdB6T_cuZG",
+        "width" : 4624
+      },
+      {
+        "height" : 3006,
+        "html_attributions" : [
+          "\u003ca href=\"https://maps.google.com/maps/contrib/113077192008541328142\"\u003eIan Stocco\u003c/a\u003e"
+        ],
+        "photo_reference" : "AUjq9jl1vCIxDNtlHuADtlzDd_CDiP1t73bYL2ylqYp4OHdLTCs4lWs8cE941jgURpc1h54AeQn4_Rc_HnMb8sGXmskk_fHX-kwWgUfE13Th4RaLFwbjaSDkY1ywFRsiNkt0SBT7C39GPtIW1BCaKdUBJT-n_pH3dIOHuIV7R9vyL4JedeM0",
+        "width" : 5344
+      },
+      {
+        "height" : 3456,
+        "html_attributions" : [
+          "\u003ca href=\"https://maps.google.com/maps/contrib/105468529232051194206\"\u003eDuarte Cespedes\u003c/a\u003e"
+        ],
+        "photo_reference" : "AUjq9jmRyvhaPASNLkDqznT81QszAGsLGt1rupmBO3aSUjaahd0yZ74VVxzoullUa4t1884lbTR51ELzBrWHjDOWRodDQ0pZtxzK927zkJuSxnrMwzwjhT8ZrXCimn0Xl4TxOt_6l2vqyuVtht8CQlo6lHopm25VzvOYPRp_C9bKqg7xuHM",
+        "width" : 4608
+      },
+      {
+        "height" : 3000,
+        "html_attributions" : [
+          "\u003ca href=\"https://maps.google.com/maps/contrib/102871302960625585822\"\u003eJon isker\u003c/a\u003e"
+        ],
+        "photo_reference" : "AUjq9jmHIZJHdcNFl1NCFq3_CjlWPVSismNOxZbSUdX1yqETmQ6n3HIf_PxJZ6aw-YHoFyZQJbQEFeOI_G-nZBQMzOksOUsJyN-lM8ungRO3iVIuFCslJi1ZVvwNx64FearuzDIuQQMzoS8SsYKA68aAU7lsuyhTVu-iuZIRzC5m6LGpCNz8",
+        "width" : 4000
+      },
+      {
+        "height" : 3472,
+        "html_attributions" : [
+          "\u003ca href=\"https://maps.google.com/maps/contrib/112830079544256790694\"\u003eDaniel Reeves\u003c/a\u003e"
+        ],
+        "photo_reference" : "AUjq9jmezLE60Tk9vhHsFvNzAvAxBnFASTOGu15Z4velLZYEZQBuJclGbGqNsqqSfD6HbcMURxYh5RCMh9nNE8KF4VhPeUjUws3I82aCJxuJ5BDWX3m_3xsd4o8Zl8rmdOSLIymVvQ_7amrfm6ktRgBwttKGtcWOE8skuLLH6-DFxTLFVRgh",
+        "width" : 4624
+      },
+      {
+        "height" : 3264,
+        "html_attributions" : [
+          "\u003ca href=\"https://maps.google.com/maps/contrib/117897876865445700010\"\u003eJames Davis\u003c/a\u003e"
+        ],
+        "photo_reference" : "AUjq9jlgt_3K8hG7LYcNPgIESgWipzMWZwJWvScAJyC0AlrpmkH1--DPn-D_jDd4gk7tqeEc2TTgcAld8r3isoClzJUGaw36ccNK0KQSHYL3QaPq1mlWcYDDJkh5wvUOwHLfSxl2qOnCE851Ud_YUBlVONFfhQREB3d58CgVIKlTO8Ae5qnT",
+        "width" : 1836
+      }
+    ],
+    "place_id" : "ChIJs9ETUBW9-IcRdZOTQ-uLQz0",
+    "reference" : "ChIJs9ETUBW9-IcRdZOTQ-uLQz0",
+    "types" : [ "locality", "political" ],
+    "url" : "https://maps.google.com/?q=Eau+Claire,+WI,+USA&ftid=0x87f8bd155013d1b3:0x3d438beb43939375",
+    "utc_offset" : -300,
+    "vicinity" : "Eau Claire",
+    "website" : "http://www.ci.eau-claire.wi.us/"
+  },
+  "status" : "OK"
+}

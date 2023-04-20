@@ -40,6 +40,7 @@ export async function reverseGeocode(query: IReverseGeocodeQuery) {
       locality: locality.long_name || locality.short_name,
       administrativeAreaLevel1: administrativeAreaLevel1.long_name || administrativeAreaLevel1.short_name,
       administrativeAreaLevel2: administrativeAreaLevel2.long_name || administrativeAreaLevel2.short_name,
+      stateCode: administrativeAreaLevel1.short_name,
       countryCode: country.short_name,
       country: country.long_name,
       postalCode: postalCode.long_name,
